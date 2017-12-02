@@ -100,5 +100,26 @@ for i in range(len(cr_int)):
 
 print(count)
 
+data_dir = 'training_data/colorization.eecs.berkeley.edu/imgs/training/'
+
+data_generator_1 = test_datagen.flow_from_directory(
+    data_dir,
+    target_size=(img_width, img_height),
+    batch_size=batch_size, shuffle = False)
+
+results_1 = model.predict_generator(
+    data_generator_1, steps = 16000, max_queue_size=10, workers=1, use_multiprocessing=False, verbose=0)
+
+def merge_two_dicts(x, y):
+    z = x.copy()   # start with x's keys and values
+    z.update(y)    # modifies z with y's keys and values & returns None
+    return z
+
+all_dict_1 = findDict(results_1, data_generator_1.filenames)
+z = merge_two_dicts(all_dict, all_dict_1)
+sorted_all_dict_z = sorted(z.iteritems(), key=lambda (k,v): (v,k))
+print(sorted_all_dict_z[18000:])
+
+
 
 
