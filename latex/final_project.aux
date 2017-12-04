@@ -1,0 +1,48 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}\hskip -1em.\nobreakspace  {}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Some examples of grayscale and ground-truth colored corresponding input/output pairs}}{1}{figure.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}\hskip -1em.\nobreakspace  {}Related Work}{2}{subsection.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}\hskip -1em.\nobreakspace  {}Approach}{2}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\hskip -1em.\nobreakspace  {}Generator Architecture}{2}{subsection.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The generator architecture designed by Zhang et al. Each conv layer consists of 2 or 3 repeated conv and ReLU layers followed by a BatchNorm layer. Changes in resolution are through down and upsampling.}}{3}{figure.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}\hskip -1em.\nobreakspace  {}Discriminator Architecture}{3}{subsection.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\hskip -1em.\nobreakspace  {}Results}{3}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\hskip -1em.\nobreakspace  {}Training the discriminator}{3}{subsection.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The discriminator architecture is shown here. The three-channel image is passed through three convolutional layers with $3 \times 3$ filters. Each convolutional layer is followed by ReLU activation and a $2 \times 2$ max pooling layer. This output is then flattened and passed through a fully connected layer of size 64 with ReLU. Dropout is then added and a sigmoid output of a single unit converts the output to a value from the range of 0 to 1.}}{4}{figure.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The training and validation accuracy over 10 epochs. Note that accuracy plateaus around $86\%$ for both training and validation data sets.}}{4}{figure.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\hskip -1em.\nobreakspace  {}Discriminator Performance}{4}{subsection.3.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Our discriminator labeled computer generated images as real $2.8\%$ of the time in comparison to humans on Amazon Turk who labeled computer generated images as real $32.3\%$ of the time.}}{4}{table.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}\hskip -1em.\nobreakspace  {}Qualitative Observations}{4}{subsection.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The 10 images the discriminator considers the most computer generated are located on the left of each pair. The corresponding ground truth image is located on the right.}}{5}{figure.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The 10 images the discriminator considers the most real are located on the left of each pair. The corresponding computer generated image is located on the right.}}{5}{figure.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A sampling of 10 of the 58 pairs of images that the discriminator incorrectly identifies as real. The computer generated image appears on the left and the corresponding real image appears on the right.}}{5}{figure.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}\hskip -1em.\nobreakspace  {}Fine-Tuning the Generator}{5}{subsection.3.4}}
+\bibcite{notes}{1}
+\bibcite{notes}{2}
+\bibcite{notes}{3}
+\bibcite{notes}{4}
+\bibcite{notes}{5}
+\bibcite{notes}{6}
+\bibcite{notes}{7}
+\bibcite{notes}{8}
+\bibcite{notes}{9}
+\@writefile{toc}{\contentsline {section}{\numberline {4}\hskip -1em.\nobreakspace  {}Conclusion and Future Work}{6}{section.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Acknowledgements}{6}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Contribution}{6}{section.6}}
